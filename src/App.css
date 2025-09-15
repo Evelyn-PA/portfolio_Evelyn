@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .top {
   display: flex;
   justify-content: center;
@@ -17,10 +29,112 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+.navbar {
   width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
+}
+
+/* For the body */
+.container {
+  max-width: 1200px;
+  margin: 2rem;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: Roboto;
+  line-height: 1.6;
+  overflow-y: auto;
+}
+
+.container2 {
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+  border-radius: 8px;
+  font-family: Fira Code;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.roundBracket {
+  color: #fff;
+  font-size: 24px;
+}
+
+.bracket {
+  color: #CCC;
+  font-size: 24px;
+}
+
+.bracket-left {
+  margin-left: 2.5rem;
+  color: #CCC;
+  font-size: 24px;
+}
+
+.bracket-left2 {
+  color: #CCC;
+  font-size: 24px;
+}
+
+.keyword {
+  color: #f92672;
+  font-size: 24px;
+}
+
+.keyword2 {
+  color: #f92672;
+  font-size: 24px;
+  margin-left: 1rem;
+}
+
+.identifier {
+  color: #66d9ef;
+  font-size: 24px;
+}
+
+.identifier2 {
+  color: #50FA7B;
+  font-size: 24px;
+}
+
+.property {
+  color: #FFB74D;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.string {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.number {
+  color: #FD971F;
+  font-size: 18px;
+}
+
+/*Curriculum button*/
+
+.SButton {
+  width: 187px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: rgba(255, 209, 102, 0.90);
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
