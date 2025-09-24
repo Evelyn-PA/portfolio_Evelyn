@@ -36,6 +36,19 @@
   gap: 15px;
 }
 
+/* Align the body and the image*/
+.textnimg{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Avatar for the homepage*/
+.ava{
+  width: 15%;
+  margin-left: auto;
+}
+
 /* For the body */
 .container {
   margin: 3.5rem 2rem 1.5rem 2rem;
