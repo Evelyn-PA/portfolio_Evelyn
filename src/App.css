@@ -9,7 +9,6 @@
 .page {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .top {
@@ -39,8 +38,8 @@
 
 /* For the body */
 .container {
-  max-width: 1200px;
-  margin: 2rem;
+  margin: 3.5rem 2rem 1.5rem 2rem;
+  max-width: 100%;
   padding: 16px;
   border-radius: 8px;
   font-family: Roboto;
@@ -120,21 +119,36 @@
 /*Curriculum button*/
 
 .SButton {
-  width: 187px;
-  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-left: 4rem;
+  margin-top: -1rem;
+  width: 190px;
+  height: 40px;
   flex-shrink: 0;
-  border-radius: 16px;
-  background: rgba(255, 209, 102, 0.90);
+  border-radius: 15px;
+  background: rgba(255, 209, 102, 0.9);
   color: #000;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: bolder;
   line-height: normal;
   text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-skip-ink: none;
-  text-decoration-thickness: auto;
-  text-underline-offset: auto;
-  text-underline-position: from-font;
+  cursor: pointer;
+  box-shadow: 0px 8px 0px rgba(255, 192, 46, 0.9);
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.SButton:active {
+  transform: translateY(7px);
+  box-shadow: 0px 3px 0px rgba(255, 192, 46, 0.9);
+}
+
+.arrow {
+  width: 18px;
+  height: 18px;
+  margin-left: 0.5rem;
 }
