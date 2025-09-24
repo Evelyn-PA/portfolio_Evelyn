@@ -1,22 +1,23 @@
-import { useState } from 'react'
-import Header from "./Components/Top"
-import Body from "./Components/Body"
-import SButton from "./Components/StartButton"
-import Nav from "./Components/Nav"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+import Home from "./Pages/Home"
 import './App.css'
 
 function App() {
 
 
   return (
-    <div className='page'>
-      <Header />
-      <Body />
-      <div className='navAndBtn'>
-        <SButton />
-        <Nav />
-      </div>
-    </div>
+    <Router>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+
 
   )
 }
