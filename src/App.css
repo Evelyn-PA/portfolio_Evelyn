@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 .page {
@@ -45,7 +46,8 @@
 
 /*Avatar for the homepage*/
 .ava{
-  width: 15%;
+  width: 16rem;
+  height: 18rem;
   margin-left: auto;
 }
 

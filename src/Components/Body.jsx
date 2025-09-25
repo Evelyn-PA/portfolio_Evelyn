@@ -40,7 +40,7 @@ export default function Body() {
         {"    "}
         <span className="property">looking_for:</span>{" "}
         <span className="string">
-          "Internship starting Aug 2025 (Frontend focus, open to learn backend
+          "Internship starting Aug 2025 (Frontend focus, open to learn {"\n"}    backend
           too)"
         </span> {"\n"}
 
