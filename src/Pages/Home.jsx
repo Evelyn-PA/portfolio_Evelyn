@@ -12,7 +12,6 @@ export default function Home() {
             <Header />
             <div className="textnimg"> 
                 <Body />
-                <img src={avatar} alt="avatar" className='ava'/>
             </div>
             <div className='navAndBtn'>
                 <SButton />
