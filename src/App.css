@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 .page {
@@ -38,18 +38,13 @@
 }
 
 /* Align the body and the image*/
-.textnimg{
+.textnimg {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /*Avatar for the homepage*/
-.ava{
-  width: 16rem;
-  height: 18rem;
-  margin-left: auto;
-}
 
 /* For the body */
 .container {
@@ -224,3 +219,9 @@
   align-items: center;
   width: 100%;
 }
+
+.rb-3d spline-viewer{
+  width: 100%; /* limit the 3D model width */
+  height: auto;
+}
+

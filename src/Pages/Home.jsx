@@ -10,8 +10,14 @@ export default function Home() {
     return (
         <div className='page'>
             <Header />
-            <div className="textnimg"> 
-                <Body />
+            <div className="textnimg">
+                <div>
+                    <Body />
+                </div>
+                <div className="rb-3d">
+                    <spline-viewer url="https://prod.spline.design/DxpSX440vhckpAiz/scene.splinecode"
+                    ></spline-viewer>
+                </div>
             </div>
             <div className='navAndBtn'>
                 <SButton />
