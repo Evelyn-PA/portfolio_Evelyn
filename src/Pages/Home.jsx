@@ -2,7 +2,7 @@ import Header from "../Components/Top"
 import Body from "../Components/Body"
 import SButton from "../Components/StartButton"
 import Nav from "../Components/Nav"
-import avatar from "/Image/Mickey - Hide.jpg"
+import Img from "/Image/avt2.gif"
 import '../App.css'
 
 export default function Home() {
@@ -14,9 +14,8 @@ export default function Home() {
                 <div>
                     <Body />
                 </div>
-                <div className="rb-3d">
-                    <spline-viewer url="https://prod.spline.design/DxpSX440vhckpAiz/scene.splinecode"
-                    ></spline-viewer>
+                <div className="img">
+                    <img src ={Img} alt ="avatar" id = "avt-img"/>
                 </div>
             </div>
             <div className='navAndBtn'>

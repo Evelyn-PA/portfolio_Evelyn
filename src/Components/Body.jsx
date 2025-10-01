@@ -16,13 +16,13 @@ export default function Body() {
       <div className="container2">
         {"    "}
         <span className="property">name:</span>{" "}
-        <span className="string">"Anh (Evelyn) Nguyen,"</span>{"\n"}
+        <span className="string">"Anh Nguyen,"</span>{"\n"}
         {"    "}
         <span className="property">role:</span>{" "}
         <span className="string">"Computer Applications Student,"</span>{"\n"}
         {"    "}
         <span className="property">university:</span>{" "}
-        <span className="string">"Hameenlinna UAS, Finland,"</span>{"\n"}
+        <span className="string">"Finland,"</span>{"\n"}
         {"    "}
         <span className="property">year:</span>{" "}
         <span className="number">3,</span>{"\n"}
