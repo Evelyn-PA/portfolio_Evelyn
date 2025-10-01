@@ -22,7 +22,7 @@
   left: 0;
   font-family: Poppins;
   color: #4DD0E1;
-  font-size: 20.308px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -45,12 +45,12 @@
 }
 
 /*Avatar for the homepage*/
-#avt-img{
-  width: 80%;
-  height: 80%;
-  position: relative;
-  left: 20%;
+#avt-img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
+
 /* For the body */
 .container {
   margin: 3.5rem 2rem 1.5rem 2rem;
@@ -140,8 +140,7 @@
   justify-content: center;
   align-items: center;
   border: none;
-  margin-left: 4rem;
-  margin-top: -1rem;
+  margin: 0 auto;
   width: 190px;
   height: 40px;
   flex-shrink: 0;
@@ -225,3 +224,50 @@
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .navAndBtn {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .textnimg {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textnimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #avt-img {
+    max-width: 90%;
+    height: auto;
+    margin: 1rem auto 0;
+  }
+
+  .navAndBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .SButton {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 200px;
+  }
+}
+
+.page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
