@@ -11,7 +11,7 @@ export default function Home() {
         <div className='page'>
             <Header />
             <div className="textnimg">
-                <div>
+                <div className="the-code">
                     <Body />
                 </div>
                 <div className="img">
