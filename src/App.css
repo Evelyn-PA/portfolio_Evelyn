@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -9,6 +9,10 @@
 .page {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 .top {
@@ -19,13 +23,12 @@
   position: relative;
   top: 0;
   left: 0;
-  font-family: Poppins;
-  color: #4DD0E1;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-family: "Poppins", sans-serif;
+  color: #4dd0e1;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-family: 'Poppins', sans-serif;
 }
 
 .brand {
@@ -53,7 +56,6 @@
 .the-code {
   flex: 1 1 80%;
   min-width: 300px;
-
 }
 
 .img {
@@ -77,7 +79,7 @@
   overflow-y: auto;
   overflow-x: auto;
   white-space: pre;
-  font-size: clamp(0.85rem, 1.5vw, 1.1rem);
+  font-size: 1.1rem;
   line-height: 1.6;
   font-family: "Fira Code", monospace;
 }
@@ -89,50 +91,50 @@
   line-height: 1.6;
   overflow-x: auto;
   white-space: pre;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: 1.125rem;
 }
 
 .keyword,
 .keyword2 {
   color: #f92672;
-  font-size: 1.3em;
+  font-size: 1.43rem;
 }
 
 .identifier {
   color: #66d9ef;
-  font-size: 1.2em;
+  font-size: 1.32rem;
 }
 
 .identifier2 {
-  color: #50FA7B;
-  font-size: 1.2em;
+  color: #50fa7b;
+  font-size: 1.32rem;
 }
 
 .property,
 .string,
 .number {
-  font-size: 1em;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .property {
-  color: #FFB74D;
+  color: #ffb74d;
 }
 
 .string {
-  color: #FFF;
+  color: #fff;
 }
 
 .number {
-  color: #FD971F;
+  color: #fd971f;
 }
 
 .roundBracket,
 .bracket,
 .bracket-left,
 .bracket-left2 {
-  color: #CCC;
-  font-size: 1.2em;
+  color: #ccc;
+  font-size: 1.32rem;
 }
 
 .bracket-left {
@@ -140,7 +142,6 @@
 }
 
 /*Curriculum button*/
-
 .SButton {
   display: flex;
   justify-content: center;
@@ -154,7 +155,7 @@
   background: rgba(255, 209, 102, 0.9);
   color: #000;
   font-family: Poppins;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: bolder;
   line-height: normal;
@@ -189,24 +190,24 @@
   display: inline-flex;
   align-items: center;
   font-family: Poppins;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: bolder;
-  color: #FFD166;
+  color: #ffd166;
 }
 
 .menu::before {
   content: "[";
   margin-right: 0.75rem;
-  color: #FFD166;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #ffd166;
+  font-size: 1.125rem;
 }
 
 .menu::after {
   content: "]";
   margin-left: 0.75rem;
-  color: #FFD166;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: #ffd166;
+  font-size: 1.125rem;
 }
 
 .menu a:hover,
@@ -220,10 +221,8 @@
 .menu a {
   margin: 0 1.25rem;
   cursor: pointer;
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: 1.125rem;
 }
-
-/* Allign the btn and the nav on the same line*/
 .navAndBtn {
   display: flex;
   flex-direction: row;
@@ -231,66 +230,174 @@
   width: 100%;
 }
 
-.page {
-  width: 100%;
-  max-width: 75rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
-
-/* Base (mobile-first) styles */
-
-/* Mobile-first adjustments */
-
-/* Tablet */
-
+/* Tablet and below */
 @media (max-width: 1024px) {
-.textnimg {
-  flex-direction: column; 
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
+  .textnimg {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
 
   .top {
+    display: flex;
     flex-direction: column;
-    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-size: 1.25rem;
     padding: 1rem 0;
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
   }
 
-    .navbar {
+  .brand {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
   }
+
   .img {
-  justify-content: center;
-  margin-bottom: 2rem;
-}
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 
   .container,
-  .container2,
-  .the-code {
+  .container2 {
     width: 90%;
-    max-width: 800px;
+    max-width: 100%;
     padding: 1rem;
     margin: 1rem auto;
-    border-radius: 1rem;
-    overflow-x: auto;
+    overflow-x: hidden;
     white-space: pre-wrap;
-    font-size: clamp(0.75rem, 3vw, 1rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.95rem;
+  }
+  .keyword,
+  .keyword2 {
+    font-size: 1.24rem;
+    /* Proportionally scaled for tablet */
+  }
+
+  .identifier,
+  .identifier2 {
+    font-size: 1.14rem;
+    /* Proportionally scaled for tablet */
+  }
+
+  .property,
+  .string,
+  .number {
+    font-size: 0.95rem;
+    /* Matches container size */
+  }
+
+  .roundBracket,
+  .bracket,
+  .bracket-left,
+  .bracket-left2 {
+    font-size: 1.14rem;
+    /* Proportionally scaled for tablet */
+  }
+
+  .the-code {
+    width: 90%;
+    max-width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
   }
 
   .navAndBtn {
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .menu {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .menu::before,
+  .menu::after {
+    font-size: 1rem;
+  }
+
+  .menu a {
+    font-size: 1rem;
+    margin: 0 0.75rem;
+  }
+
+  .SButton {
+    font-size: 1rem;
+  }
 }
+
+/* Mobile phones */
+@media (max-width: 640px) {
+  .top {
+    font-size: 1.125rem;
+  }
+
+  .container,
+  .container2 {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+
+  /* Added mobile-specific sizes for code elements */
+  .keyword,
+  .keyword2 {
+    font-size: 1.11rem;
+    /* Proportionally scaled for mobile */
+  }
+
+  .identifier,
+  .identifier2 {
+    font-size: 1.02rem;
+    /* Proportionally scaled for mobile */
+  }
+
+  .property,
+  .string,
+  .number {
+    font-size: 0.85rem;
+    /* Matches container size */
+  }
+
+  .roundBracket,
+  .bracket,
+  .bracket-left,
+  .bracket-left2 {
+    font-size: 1.02rem;
+    /* Proportionally scaled for mobile */
+  }
+
+  .menu {
+    font-size: 0.9rem;
+  }
+
+  .menu::before,
+  .menu::after {
+    font-size: 0.9rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+  }
+
+  .brand {
+    width: 8rem;
+  }
+
+  #avt-img {
+    max-width: 150px;
+  }
 }
