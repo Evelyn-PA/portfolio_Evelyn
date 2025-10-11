@@ -223,6 +223,7 @@
   cursor: pointer;
   font-size: 1.125rem;
 }
+
 .navAndBtn {
   display: flex;
   flex-direction: row;
@@ -278,23 +279,21 @@
     overflow-wrap: break-word;
     font-size: 0.95rem;
   }
+
   .keyword,
   .keyword2 {
     font-size: 1.24rem;
-    /* Proportionally scaled for tablet */
   }
 
   .identifier,
   .identifier2 {
     font-size: 1.14rem;
-    /* Proportionally scaled for tablet */
   }
 
   .property,
   .string,
   .number {
     font-size: 0.95rem;
-    /* Matches container size */
   }
 
   .roundBracket,
@@ -302,7 +301,6 @@
   .bracket-left,
   .bracket-left2 {
     font-size: 1.14rem;
-    /* Proportionally scaled for tablet */
   }
 
   .the-code {
@@ -351,24 +349,20 @@
     padding: 0.75rem;
   }
 
-  /* Added mobile-specific sizes for code elements */
   .keyword,
   .keyword2 {
     font-size: 1.11rem;
-    /* Proportionally scaled for mobile */
   }
 
   .identifier,
   .identifier2 {
     font-size: 1.02rem;
-    /* Proportionally scaled for mobile */
   }
 
   .property,
   .string,
   .number {
     font-size: 0.85rem;
-    /* Matches container size */
   }
 
   .roundBracket,
@@ -376,7 +370,6 @@
   .bracket-left,
   .bracket-left2 {
     font-size: 1.02rem;
-    /* Proportionally scaled for mobile */
   }
 
   .menu {
@@ -399,5 +392,75 @@
 
   #avt-img {
     max-width: 150px;
+  }
+}
+
+.hamburger {
+  display: none;
+  /* hidden on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffd166;
+}
+
+/* === Sidebar styles === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Hidden off screen */
+  width: 250px;
+  height: 100%;
+  background: #333;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar a {
+  color: #ffd166;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar.open {
+  left: 0;
+  /* Slide in */
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffd166;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    /* Hide original menu on mobile */
+  }
+
+  .hamburger {
+    display: block;
+    /* Show hamburger icon */
+  }
+
+  .nav {
+    justify-content: space-between;
+    padding: 0 1rem;
   }
 }

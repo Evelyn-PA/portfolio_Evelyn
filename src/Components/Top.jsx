@@ -15,7 +15,7 @@ export default function top() {
                 </a>
                 <a href="https://www.linkedin.com/in/anh-evelyn-nguyen-a0a227238/" target="_blank" rel="noopener noreferrer">
                     <img src="/Image/linkedin.svg" alt="My LinkedIn" />
-                </a>
+                </a>    
                 <img src="/Image/Vector 1.svg" />
             </div>
         </header>
