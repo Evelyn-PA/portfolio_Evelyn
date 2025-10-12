@@ -231,6 +231,58 @@
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  /* hidden on desktop */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffd166;
+}
+
+/* === Sidebar styles === */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  /* Hidden off screen */
+  width: 250px;
+  height: 100%;
+  background: #054861;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar a {
+  color: #ffd166;
+  font-family: Poppins;
+  font-size: 1.125rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffd166;
+  cursor: pointer;
+}
+
 /* Tablet and below */
 @media (max-width: 1024px) {
   .textnimg {
@@ -394,7 +446,7 @@
     max-width: 150px;
   }
 
-    .menu {
+  .menu {
     display: none;
     /* Hide original menu on mobile */
   }
@@ -405,60 +457,7 @@
   }
 
   .nav {
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 1rem;
   }
-}
-
-.hamburger {
-  display: none;
-  /* hidden on desktop */
-  font-size: 2rem;
-  cursor: pointer;
-  color: #ffd166;
-}
-
-/* === Sidebar styles === */
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  /* Hidden off screen */
-  width: 250px;
-  height: 100%;
-  background: #054861;
-  padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  transition: left 0.3s ease;
-  z-index: 1000;
-}
-
-.sidebar a {
-  color: #ffd166;
-  font-family: Poppins;
-  font-size: 1.125rem;
-  padding: 0.75rem 1rem;
-  text-decoration: none;
-}
-
-.sidebar a:hover {
-  text-decoration: underline;
-}
-
-.sidebar.open {
-  left: 0;
-  /* Slide in */
-}
-
-.close-btn {
-  position: absolute;
-  top: 1rem;
-  right: 1.25rem;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: #ffd166;
-  cursor: pointer;
 }
