@@ -233,7 +233,6 @@
 
 .hamburger {
   display: none;
-  /* hidden on desktop */
   font-size: 2rem;
   cursor: pointer;
   color: #ffd166;
@@ -448,12 +447,13 @@
 
   .menu {
     display: none;
-    /* Hide original menu on mobile */
   }
 
   .hamburger {
     display: block;
-    /* Show hamburger icon */
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
   }
 
   .nav {
