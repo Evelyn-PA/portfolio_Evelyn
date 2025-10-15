@@ -484,12 +484,25 @@
   .top {
     font-size: calc(1.2rem * var(--font-scale));
   }
-  
 
-  .container,
-  .container2 {
-    padding: 0.8rem;
+  .page {
+    max-width: 100rem;
+    min-height: 100vh;
   }
+
+  .textnimg {
+    margin-top: 4rem;
+  }
+
+  #avt-img {
+    max-width: 280px;
+  }
+
+  .navAndBtn {
+    margin-top: auto;
+    padding: 2rem 0;
+  }
+
 }
 
 /* Added media query for extra large desktop screens (1920px+) */
