@@ -488,7 +488,7 @@
 
   .page {
     max-width: 100rem;
-    min-height: 100vh;
+    min-height: 75vh;
   }
 
   .textnimg {

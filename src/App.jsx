@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import Header from "./Components/Top"
 import Home from "./Pages/Home"
+import SButton from "./Components/StartButton"
+import Nav from "./Components/Nav"
 import './App.css'
 
 function App() {
@@ -8,9 +10,17 @@ function App() {
 
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <div className="page">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <div className='navAndBtn'>
+          <SButton />
+          <Nav />
+        </div>
+      </div>
+
     </Router>
 
 
