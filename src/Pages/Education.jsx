@@ -1,5 +1,5 @@
 import '../App.css'
-
+import Img from "/Image/Line.png"
 export default function Education() {
     return (
         <pre className="container">
@@ -7,25 +7,30 @@ export default function Education() {
             <span className="identifier">AnhNguyen</span>
             <span className="roundBracket">(education)</span>
             <span className="bracket">{" {"}</span>{"\n"}
-            {"  "}
 
-            <div className="container2">
+            <div className="containerEdu">
                 <div>
-                    {"    "}
-                    <span className="property">HAMK University of Applied Sciences (08.2023 - Now)</span> {"\n"}
-                    {"    "}
-                    <span className="property">Bachelor of Computer Applications</span>{"\n"}
-                    {"    "}
-                    <span className="string">Coursework: Web Programming, Web Framework Project{"\n"}, Web Accessibility, Communication in Customer Projects, {"\n"} JavaScript, Database Management, Software Testing
-                    </span>{"\n"}
+                    <img src={Img} alt="line" id="line" />
                 </div>
                 <div>
-                    {"    "}
-                    <span className="property">Amity Global Institute (11.2022 - 06.2023)</span> {"\n"}
-                    {"    "}
-                    <span className="property">Diploma in Computing</span>{"\n"}
-                    {"    "}
+                    <div className='edu1'>
+                        {"    "}
+                        <span className="property">HAMK University of Applied Sciences (08.2023 - Now)</span> {"\n"}
+                        {"    "}
+                        <span className="property">Bachelor of Computer Applications</span>{"\n"}
+                        {"    "}
+                        <span className="string">Coursework: Web Programming, Web Framework Project,{"\n"}    Web Accessibility, Communication in Customer Projects, {"\n"}    JavaScript, Database Management, Software Testing
+                        </span>{"\n"}
+                    </div>
+                    <div className='edu2'>
+                        {"    "}
+                        <span className="property">Amity Global Institute (11.2022 - 06.2023)</span> {"\n"}
+                        {"    "}
+                        <span className="property">Diploma in Computing</span>{"\n"}
+                        {"    "}
+                    </div>
                 </div>
+
             </div >
             <span className="bracket-left2">{"}"}</span>
 

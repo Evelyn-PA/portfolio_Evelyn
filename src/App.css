@@ -154,6 +154,34 @@
   margin-left: 2.5rem;
 }
 
+/*Education tab */
+.edu1 {
+  margin-top: 2rem;
+}
+
+.edu2 {
+  margin-top: 2rem;
+   padding-bottom: 2rem;
+}
+
+.containerEdu {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  position: relative;
+  min-height: 100%;
+}
+
+#line {
+  width: 2px;
+  background-color: #fff;
+  min-height:16.5rem;
+  height: 90%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
 /*Curriculum button*/
 .SButton {
   display: flex;
