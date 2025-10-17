@@ -5,7 +5,7 @@ export default function Education() {
         <pre className="container">
             <span className="keyword">function</span>{" "}
             <span className="identifier">AnhNguyen</span>
-            <span className="roundBracket">(education)</span>
+            <span className="name">(education)</span>
             <span className="bracket">{" {"}</span>{"\n"}
 
             <div className="containerEdu">

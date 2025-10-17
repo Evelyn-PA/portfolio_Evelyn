@@ -121,6 +121,11 @@
   font-size: calc(1.32rem * var(--font-scale));
 }
 
+.name {
+  color: #61FFA0;
+  font-size: calc(1.32rem * var(--font-scale));
+}
+
 .property,
 .string,
 .number {
@@ -161,7 +166,7 @@
 
 .edu2 {
   margin-top: 2rem;
-   padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .containerEdu {
@@ -176,7 +181,7 @@
 #line {
   width: 2px;
   background-color: #fff;
-  min-height:16.5rem;
+  min-height: 16.5rem;
   height: 90%;
   margin-top: 0.5rem;
   flex-shrink: 0;
