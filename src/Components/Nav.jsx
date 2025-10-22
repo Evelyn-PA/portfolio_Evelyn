@@ -1,6 +1,6 @@
 import { useState } from "react";
-import {Link} from "react-router-dom"
-export default function Nav({setCurrentImage}) {
+import { Link } from "react-router-dom"
+export default function Nav({ setCurrentImage }) {
 
 
     const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +18,13 @@ export default function Nav({setCurrentImage}) {
 
 
                 <ul className="menu">
-                    <Link to="/" onClick={() => setCurrentImage("/Image/avt.gif")}><li><a>Home,</a></li></Link>
-                    <Link to="/education" onClick={() => setCurrentImage("/Image/Reading book.png")}><li><a>Education,</a></li></Link>
+                    <li>
+                        <Link to="/" onClick={() => setCurrentImage("/Image/avt.gif")}>Home,</Link>
+                    </li>
+
+                    <li>
+                        <Link to="/education" onClick={() => setCurrentImage("/Image/Reading book.png")}>Education,</Link>
+                    </li>
 
                     <li><a>Projects,</a></li>
                     <li><a>Skills,</a></li>
@@ -35,8 +40,8 @@ export default function Nav({setCurrentImage}) {
                 >
                     ×
                 </button>
-                <a onClick={() => setIsOpen(false)}>Home</a>
-                <a onClick={() => setIsOpen(false)}>Education</a>
+                <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+                <Link to="/education" onClick={() => setIsOpen(false)}>Education</Link>
                 <a onClick={() => setIsOpen(false)}>Projects</a>
                 <a onClick={() => setIsOpen(false)}>Skills</a>
                 <a onClick={() => setIsOpen(false)}>Contact</a>

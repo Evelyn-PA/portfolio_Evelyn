@@ -84,8 +84,7 @@
   max-width: 100%;
   overflow-y: auto;
   overflow-x: auto;
-  white-space: pre-line;
-  word-break: break-word;
+  white-space: pre;
   /* Using CSS variable for responsive scaling */
   font-size: calc(1.1rem * var(--font-scale));
   line-height: 1.6;
@@ -404,8 +403,7 @@
     padding: 1rem;
     margin: 1rem auto;
     overflow-x: hidden;
-    white-space: pre-line;
-    word-break: break-word;
+    white-space: pre-wrap;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-size: calc(0.95rem * var(--font-scale));
@@ -484,8 +482,6 @@
   .container2 {
     font-size: calc(0.85rem * var(--font-scale));
     padding: 0.75rem;
-    white-space: pre-line;
-    word-break: break-word;
   }
 
   .keyword,
