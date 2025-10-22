@@ -84,7 +84,8 @@
   max-width: 100%;
   overflow-y: auto;
   overflow-x: auto;
-  white-space: pre;
+  white-space: pre-line;
+  word-break: break-word;
   /* Using CSS variable for responsive scaling */
   font-size: calc(1.1rem * var(--font-scale));
   line-height: 1.6;
@@ -353,6 +354,7 @@
   cursor: pointer;
 }
 
+
 /* Tablet and below */
 @media (max-width: 1024px) {
 
@@ -402,7 +404,8 @@
     padding: 1rem;
     margin: 1rem auto;
     overflow-x: hidden;
-    white-space: pre-wrap;
+    white-space: pre-line;
+    word-break: break-word;
     word-wrap: break-word;
     overflow-wrap: break-word;
     font-size: calc(0.95rem * var(--font-scale));
@@ -481,6 +484,8 @@
   .container2 {
     font-size: calc(0.85rem * var(--font-scale));
     padding: 0.75rem;
+    white-space: pre-line;
+    word-break: break-word;
   }
 
   .keyword,
@@ -520,6 +525,11 @@
     justify-content: flex-start;
     padding: 0 1rem;
   }
+
+  #line {
+    display: none;
+  }
+
 }
 
 /* Added media query for large desktop screens (1440px+) */

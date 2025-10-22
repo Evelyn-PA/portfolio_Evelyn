@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"
-export default function Nav({ setCurrentImage }) {
+import {Link} from "react-router-dom"
+export default function Nav({setCurrentImage}) {
 
 
     const [isOpen, setIsOpen] = useState(false);

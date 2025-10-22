@@ -9,7 +9,7 @@ export default function Education() {
             <span className="bracket">{" {"}</span>{"\n"}
 
             <div className="containerEdu">
-                <div>
+                <div className='line'>
                     <img src={Img} alt="line" id="line" />
                 </div>
                 <div>
