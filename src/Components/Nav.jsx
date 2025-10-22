@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"
+export default function Nav({ setCurrentImage }) {
 
-export default function Nav() {
+
     const [isOpen, setIsOpen] = useState(false);
     return (
         <>
@@ -13,9 +15,12 @@ export default function Nav() {
                     ☰
                 </div>
 
+
+
                 <ul className="menu">
-                    <li><a>Home,</a></li>
-                    <li><a>Education,</a></li>
+                    <Link to="/" onClick={() => setCurrentImage("/Image/avt.gif")}><li><a>Home,</a></li></Link>
+                    <Link to="/education" onClick={() => setCurrentImage("/Image/Reading book.png")}><li><a>Education,</a></li></Link>
+
                     <li><a>Projects,</a></li>
                     <li><a>Skills,</a></li>
                     <li><a>Contact</a></li>

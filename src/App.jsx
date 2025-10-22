@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Header from "./Components/Top"
 import Home from "./Pages/Home"
 import Education from "./Pages/Education"
@@ -7,19 +8,26 @@ import Nav from "./Components/Nav"
 import './App.css'
 
 function App() {
-
+  const [currentImage, setCurrentImage] = useState("/Image/avt.gif");
 
   return (
     <Router>
       <div className="page">
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/education" element={<Education />} />
-        </Routes>
+
+        <div className="textnimg">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/education" element={<Education />}/>
+          </Routes>
+          <div className="img">
+            <img src={currentImage} alt="avatar" id="avt-img" />
+          </div>
+        </div>
+
         <div className='navAndBtn'>
           <SButton />
-          <Nav />
+          <Nav  setCurrentImage={setCurrentImage} />
         </div>
       </div>
 

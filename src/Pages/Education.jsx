@@ -15,18 +15,18 @@ export default function Education() {
                 <div>
                     <div className='edu1'>
                         {"    "}
-                        <span className="property">HAMK University of Applied Sciences (08.2023 - Now)</span> {"\n"}
+                        <span className="university">HAMK University of Applied Sciences (08.2023 - Now)</span> {"\n"}
                         {"    "}
-                        <span className="property">Bachelor of Computer Applications</span>{"\n"}
+                        <span className="degree">Bachelor of Computer Applications</span>{"\n"}
                         {"    "}
                         <span className="string">Coursework: Web Programming, Web Framework Project,{"\n"}    Web Accessibility, Communication in Customer Projects, {"\n"}    JavaScript, Database Management, Software Testing
                         </span>{"\n"}
                     </div>
                     <div className='edu2'>
                         {"    "}
-                        <span className="property">Amity Global Institute (11.2022 - 06.2023)</span> {"\n"}
+                        <span className="university">Amity Global Institute (11.2022 - 06.2023)</span> {"\n"}
                         {"    "}
-                        <span className="property">Diploma in Computing</span>{"\n"}
+                        <span className="degree">Diploma in Computing</span>{"\n"}
                         {"    "}
                     </div>
                 </div>
