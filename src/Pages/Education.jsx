@@ -33,8 +33,6 @@ export default function Education() {
 
             </div >
             <span className="bracket-left2">{"}"}</span>
-
-
         </pre>
     )
 }

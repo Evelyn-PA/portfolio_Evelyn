@@ -146,12 +146,12 @@
   color: #fd971f;
 }
 
-.degree {
+.degree, .tech-stack {
   font-size: calc(1.1rem * var(--font-scale));
   color: #FF3D71;
 }
 
-.university {
+.university, .title {
   font-size: calc(1.2rem * var(--font-scale));
   font-weight: bold;
   color: #FFB74D;
@@ -196,6 +196,13 @@
   height: 90%;
   margin-top: 0.5rem;
   flex-shrink: 0;
+}
+
+/* Projects tab */
+.github-link{
+    font-size: calc(1.1rem * var(--font-scale));
+  font-weight: bold;
+  color: #61FFA0;
 }
 
 /*Curriculum button*/
@@ -294,6 +301,11 @@
   align-items: center;
   width: 100%;
   gap: 10rem;
+}
+
+#github-prj{
+  color: inherit;
+  text-decoration: underline;
 }
 
 .hamburger {
@@ -548,7 +560,7 @@
   }
 
   #avt-img {
-    max-width: 280px;
+    max-width: 300px;
   }
 
   .navAndBtn {

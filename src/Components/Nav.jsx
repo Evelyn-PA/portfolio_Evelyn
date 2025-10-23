@@ -26,7 +26,7 @@ export default function Nav({ setCurrentImage }) {
                         <Link to="/education" onClick={() => setCurrentImage("/Image/Reading book.png")}>Education,</Link>
                     </li>
 
-                    <li><a>Projects,</a></li>
+                    <li><Link to="/projects" onClick={() => setCurrentImage("/Image/Projects.png")}>Projects,</Link></li>
                     <li><a>Skills,</a></li>
                     <li><a>Contact</a></li>
                 </ul>
@@ -42,7 +42,7 @@ export default function Nav({ setCurrentImage }) {
                 </button>
                 <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/education" onClick={() => setIsOpen(false)}>Education</Link>
-                <a onClick={() => setIsOpen(false)}>Projects</a>
+                <Link to="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
                 <a onClick={() => setIsOpen(false)}>Skills</a>
                 <a onClick={() => setIsOpen(false)}>Contact</a>
             </aside>
