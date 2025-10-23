@@ -552,7 +552,19 @@
   }
 
   .navAndBtn {
-    margin-top: auto;
+    position: fixed;
     padding: 2rem 0;
+    left: 10;
+    bottom: 0;
+    text-align: center;
   }
+
+  .containerEdu {
+    margin-top: 1.5rem;
+  }
+
+  .container{
+    margin-top: 3rem;
+  }
+
 }
