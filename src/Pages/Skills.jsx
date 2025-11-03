@@ -20,13 +20,13 @@ export default function Skills() {
                     </div>
                     <div className='skill2'>
                         {"    "}
-                        <span className="degree">Backend/ Tools:</span>{"\n"}
+                        <span className="tech-stack">Backend/ Tools:</span>{"\n"}
                         <span className="string">    Firebase, MongoDB, SQL, Git, Github, Netlify, Vercel{"\n"}</span>
                     </div>
 
                     <div className='skill3'>
                         {"    "}
-                        <span className="degree">Design/Collaboration:</span>{"\n"}
+                        <span className="tech-stack">Design/Collaboration:</span>{"\n"}
                         <span className="string">    Figma, Canva, Vs Code{"\n"}</span>
                     </div>
                 </div>
