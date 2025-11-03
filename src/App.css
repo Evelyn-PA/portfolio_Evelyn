@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Added CSS variables for responsive font scaling */
@@ -146,12 +145,14 @@
   color: #fd971f;
 }
 
-.degree, .tech-stack {
+.degree,
+.tech-stack {
   font-size: calc(1.1rem * var(--font-scale));
   color: #FF3D71;
 }
 
-.university, .title {
+.university,
+.title {
   font-size: calc(1.2rem * var(--font-scale));
   font-weight: bold;
   color: #FFB74D;
@@ -175,7 +176,8 @@
   margin-top: 2rem;
 }
 
-.edu2 {
+.edu2,
+.skill2 {
   margin-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -199,10 +201,27 @@
 }
 
 /* Projects tab */
-.github-link{
-    font-size: calc(1.1rem * var(--font-scale));
+.github-link {
+  font-size: calc(1.1rem * var(--font-scale));
   font-weight: bold;
   color: #61FFA0;
+}
+
+/* Skills tab */
+
+.skill3 {
+  padding-bottom: 2rem;
+}
+
+.containerSkills {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  position: relative;
+  min-height: 100%;
 }
 
 /*Curriculum button*/
@@ -299,11 +318,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  gap: 10rem;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-#github-prj{
+#github-prj {
   color: inherit;
   text-decoration: underline;
 }
@@ -575,8 +596,8 @@
     margin-top: 1.5rem;
   }
 
-  .container{
-    margin-top: 3rem;
+  .container {
+    margin-top: 6rem;
   }
 
 }

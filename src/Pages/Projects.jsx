@@ -37,7 +37,6 @@ export default function Project() {
                         <span className="github-link">Link <a href="https://github.com/Evelyn-PA/chef_claude" target="_blank" id="github-prj">Github</a></span>{"\n"}
                     </div>
                 </div>
-
             </div >
             <span className="bracket-left2">{"}"}</span>
         </pre>
