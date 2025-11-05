@@ -28,7 +28,7 @@ export default function Nav({ setCurrentImage }) {
 
                     <li><Link to="/projects" onClick={() => setCurrentImage("/Image/Projects.png")}>Projects,</Link></li>
 
-                    <li><Link to="/skills" onClick={() => setCurrentImage("/Image/Projects.png")}>Skills,</Link></li>
+                    <li><Link to="/skills" onClick={() => setCurrentImage("/Image/Skills.png")}>Skills,</Link></li>
                     <li><a>Contact</a></li>
                 </ul>
             </nav>

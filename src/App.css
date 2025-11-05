@@ -64,6 +64,8 @@
 }
 
 .img {
+  width: 250px;
+  height: 250px;
   flex: 0 0 20%;
   display: flex;
   justify-content: flex-end;
@@ -71,10 +73,13 @@
 
 /*Avatar for the homepage*/
 #avt-img {
-  width: 100%;
-  max-width: 200px;
+  width: auto;
+  height: auto;
+  max-height: 450px;
+  max-width: 450px;
   height: auto;
   border-radius: 0.5rem;
+  object-fit: contain;
 }
 
 /* For the body */
