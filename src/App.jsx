@@ -5,6 +5,7 @@ import Home from "./Pages/Home"
 import Education from "./Pages/Education"
 import Projects from "./Pages/Projects"
 import Skills from "./Pages/Skills"
+import Contact from "./Pages/Contact"
 import SButton from "./Components/StartButton"
 import Nav from "./Components/Nav"
 import './App.css'
@@ -23,12 +24,12 @@ function App() {
             <Route path="/education" element={<Education />}/>
             <Route path="/projects" element = {<Projects/>}/>
             <Route path="/skills" element = {<Skills/>}/>
+            <Route path ="/contact" element = {<Contact/>}/>
           </Routes>
           <div className="img">
             <img src={currentImage} alt="avatar" id="avt-img" />
           </div>
         </div>
-
         <div className='navAndBtn'>
           <SButton />
           <Nav  setCurrentImage={setCurrentImage} />
